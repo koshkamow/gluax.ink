@@ -5,5 +5,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://koshkamow.github.io',
+  base: '/gluax.ink',
   integrations: [react()]
 });
