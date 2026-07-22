@@ -1,0 +1,335 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Gluax Inc is the independent software contracting practice of one senior engineer — systems, backend, and full-stack work." />
+<title>Gluax Inc — Software, entered in permanent ink.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Caveat:wght@500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- shared ink filters -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="inkbleed" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.14" numOctaves="3" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="inkbleed-heavy" x="-12%" y="-40%" width="124%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.055 0.18" numOctaves="3" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+
+<!-- light paper: faint fiber grain + faint warm mottle -->
+<svg class="overlay grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <filter id="fiber">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" seed="7" stitchTiles="stitch"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.20 0"/>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#fiber)"/>
+</svg>
+<svg class="overlay mottle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <filter id="mottlef">
+    <feTurbulence type="fractalNoise" baseFrequency="0.010 0.008" numOctaves="4" seed="23" stitchTiles="stitch"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0.7 0.7 0.7 0 -0.68" result="a"/>
+    <feFlood flood-color="#8a6a3a" result="tint"/>
+    <feComposite in="tint" in2="a" operator="in"/>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#mottlef)"/>
+</svg>
+
+<div class="page">
+
+<nav>
+  <div class="wrap">
+    <div class="nav-inner">
+      <div class="wordmark"><span class="script">Gluax</span>&thinsp;<span class="tld">.ink</span></div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#opensource">Open Source</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <svg class="nav-rule" viewBox="0 0 1000 12" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" filter="url(#inkbleed)">
+      <path d="M0 7 C 90 4.4 200 8.6 330 6.4 C 470 4.4 600 8.8 740 6.2 C 860 4.2 940 7.6 1000 6 L1000 7.6 C 940 9.4 860 6.4 740 8.4 C 600 11 470 6.6 330 8.6 C 200 10.6 90 6.8 0 9 Z" fill="#1f1810" opacity="0.85"/>
+    </svg>
+  </div>
+</nav>
+
+<header>
+  <svg class="hero-blot" viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="#1f1810">
+      <g filter="url(#inkbleed-heavy)" opacity="0.88">
+        <path d="M172 96 C 186 88 202 94 206 108 C 224 106 234 120 226 132 C 242 140 244 158 230 166 C 240 180 230 196 214 194 C 214 210 198 218 186 210 C 178 224 158 224 152 210 C 136 218 122 208 124 194 C 108 194 100 180 108 168 C 94 160 96 142 110 136 C 104 122 114 108 128 110 C 132 96 156 90 172 96 Z"/>
+        <path d="M206 108 L246 74 L216 122 Z"/>
+        <path d="M124 194 L84 226 L140 206 Z"/>
+        <path d="M230 166 L268 178 L234 178 Z"/>
+        <path d="M128 110 L96 84 L142 100 Z"/>
+      </g>
+      <circle cx="86" cy="66" r="7" opacity="0.85"/>
+      <circle cx="64" cy="94" r="3.4" opacity="0.7"/>
+      <circle cx="112" cy="46" r="4.4" opacity="0.8"/>
+      <circle cx="252" cy="236" r="5" opacity="0.65"/>
+      <circle cx="268" cy="260" r="2.8" opacity="0.6"/>
+      <circle cx="176" cy="248" r="3.6" opacity="0.6"/>
+      <path d="M88 76 c 2 14 -2 28 -8 40" stroke="#1f1810" stroke-width="2.4" fill="none" opacity="0.6" stroke-linecap="round"/>
+      <path d="M248 190 C 258 206 258 224 250 240" stroke="#74202c" stroke-width="2" fill="none" opacity="0.55" stroke-linecap="round"/>
+      <circle cx="246" cy="252" r="3.2" fill="#74202c" opacity="0.6"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="entry-line">Entry the first — on work that endures,</div>
+    <div class="kicker">Gluax Inc &middot; Independent Software Practice</div>
+    <h1>Software, entered in <span class="script">permanent&nbsp;ink.</span></h1>
+    <svg class="hand-rule" viewBox="0 0 520 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" filter="url(#inkbleed)">
+      <path d="M4 11 C 60 6 130 14.5 210 9.5 C 300 4.5 380 13 470 8 L 512 9.6 C 470 12.6 380 16.4 300 9 C 210 13.6 130 18 60 10 Z" fill="#1f1810" opacity="0.9"/>
+      <path d="M30 16 C 140 12 300 18 420 13.5 S 500 15.5 516 13" stroke="#74202c" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.7"/>
+    </svg>
+    <p class="lede">Gluax Inc is the contracting practice of one senior engineer: systems, backend, and full-stack work designed, built, and shipped by the same hand that signs the proposal.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#contact">Start a conversation</a>
+      <a class="btn-quiet" href="#services"><span class="script">see</span> what I take on &darr;</a>
+    </div>
+  </div>
+</header>
+
+<div class="stroke-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 44" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" filter="url(#inkbleed-heavy)">
+    <path d="M20 24 C 220 18 420 30 720 22 C 1020 14 1240 28 1420 21 L 1421 23.4 C 1240 31.6 1020 18.6 720 26.6 C 420 34.6 220 22 20 26.4 Z" fill="#1f1810" opacity="0.8"/>
+    <circle cx="1408" cy="16" r="3" fill="#1f1810" opacity="0.6"/>
+    <circle cx="52" cy="33" r="2.4" fill="#1f1810" opacity="0.55"/>
+  </svg>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">No. i</span>
+      <span class="sec-label">Services</span>
+      <svg class="sec-flourish" viewBox="0 0 300 16" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" filter="url(#inkbleed)">
+        <path d="M2 9 C 45 4 95 13 150 8 C 210 3 260 11 298 6 L 298 7.6 C 260 13 210 6 150 10.6 C 95 15.6 45 7.4 2 11 Z" fill="#74202c" opacity="0.8"/>
+      </svg>
+    </div>
+    <h2>Contract engineering, <span class="script">end to end.</span></h2>
+    <p class="sec-intro">One engineer, directly accountable for the work. No account managers, no hand-offs, no bench of juniors billed at your expense.</p>
+    <p class="sec-intro">Contracting clients include <em>SEDA Protocol</em> — 200+ merged pull requests across the chain, VM, SDK, and contracts — and <em>Monadicus</em>. Before that, the Leo compiler at Provable (Aleo): a full-time role until 2022 and contract work since, with 100+ merged pull requests on the compiler.</p>
+    <div class="svc-list">
+      <div class="svc">
+        <span class="ordinal">first,</span>
+        <div>
+          <h3>Systems &amp; Backend</h3>
+          <p>APIs, services, data pipelines, and infrastructure that hold up under real load. Rust, Go, and the tooling around them.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <span class="ordinal">second,</span>
+        <div>
+          <h3>Full-Stack Delivery</h3>
+          <p>Complete features from schema to screen — shipped, documented, and maintainable by whoever inherits them.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <span class="ordinal">third,</span>
+        <div>
+          <h3>Rescue &amp; Hardening</h3>
+          <p>Stalled projects, brittle legacy code, and performance problems diagnosed and fixed with a clear written plan.</p>
+        </div>
+      </div>
+    </div>
+    <div class="engage">
+      <span class="note-tag">a note on terms —</span>
+      <svg class="brace" viewBox="0 0 22 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" filter="url(#inkbleed)">
+        <path d="M18 4 C 6 10 8 40 10 58 C 11 64 4 60 4 60 C 4 60 11 58 10 64 C 8 82 6 110 18 116" stroke="#74202c" stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.85"/>
+      </svg>
+      <p><strong>Engagements</strong> run from a two-week fixed-scope sprint to multi-month retained development. Every engagement begins with a short written proposal — scope, timeline, and price — before any invoice is drawn.</p>
+    </div>
+  </div>
+</section>
+
+<div class="stroke-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 44" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" filter="url(#inkbleed-heavy)">
+    <path d="M24 22 C 260 28 480 14 760 24 C 1040 33 1260 17 1416 24 L 1415 26.2 C 1260 21.6 1040 37 760 27.6 C 480 18 260 32 24 24.6 Z" fill="#1f1810" opacity="0.8"/>
+    <circle cx="44" cy="15" r="2.6" fill="#1f1810" opacity="0.55"/>
+    <circle cx="1396" cy="32" r="3" fill="#1f1810" opacity="0.6"/>
+  </svg>
+</div>
+
+<section id="products">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">No. ii</span>
+      <span class="sec-label">Products</span>
+      <svg class="sec-flourish" viewBox="0 0 300 16" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" filter="url(#inkbleed)">
+        <path d="M2 7 C 55 12 115 4 190 9 C 245 12 275 6 298 9 L 298 10.6 C 275 9 245 15 190 12 C 115 7.6 55 15 2 9 Z" fill="#74202c" opacity="0.8"/>
+      </svg>
+    </div>
+    <h2>Tools we build for ourselves, <span class="script">packaged for you.</span></h2>
+    <p class="sec-intro">Alongside client work, Gluax develops its own software. The first releases are in progress; both storefronts are open and will list each release as it lands.</p>
+    <div class="product-row">
+      <div class="product-card">
+        <svg class="card-rule" viewBox="0 0 440 14" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" filter="url(#inkbleed)">
+          <path d="M2 8 C 90 4 200 11 300 7 C 370 4.4 410 9 438 6.6 L 438 8.4 C 410 12 370 7.6 300 10 C 200 14 90 8 2 10 Z" fill="#1f1810" opacity="0.8"/>
+        </svg>
+        <span class="badge">coming soon</span>
+        <h3>Developer <span class="script">utilities</span></h3>
+        <p>Small, sharp tools born from contract work — the kind you reach for daily. First titles are in active development.</p>
+        <p class="store">Storefront: <a href="https://koshkamow.gumroad.com">koshkamow.gumroad.com</a></p>
+      </div>
+      <div class="product-card">
+        <svg class="card-rule" viewBox="0 0 440 14" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" filter="url(#inkbleed)">
+          <path d="M2 7 C 100 11 210 4 310 9 C 375 11.6 415 6 438 8.6 L 438 10.4 C 415 9 375 15 310 12 C 210 7.6 100 15 2 9 Z" fill="#1f1810" opacity="0.8"/>
+        </svg>
+        <span class="badge">coming soon</span>
+        <h3>Games &amp; <span class="script">experiments</span></h3>
+        <p>Playable work and interactive oddities from the same bench — engines and games are a long-running side of the practice.</p>
+        <p class="store">Storefront: <a href="https://koshkamow.itch.io">koshkamow.itch.io</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stroke-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 44" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" filter="url(#inkbleed-heavy)">
+    <path d="M20 24 C 220 18 420 30 720 22 C 1020 14 1240 28 1420 21 L 1421 23.4 C 1240 31.6 1020 18.6 720 26.6 C 420 34.6 220 22 20 26.4 Z" fill="#1f1810" opacity="0.8"/>
+    <circle cx="1408" cy="16" r="3" fill="#1f1810" opacity="0.6"/>
+  </svg>
+</div>
+
+<section id="opensource">
+  <div class="wrap os-wrap">
+    <svg class="os-splat" viewBox="0 0 210 210" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g fill="#74202c">
+        <path filter="url(#inkbleed-heavy)" d="M96 62c13-9 33-7 42 5 8 10 2 25 9 35 6 9 20 14 21 25 1 13-12 20-23 24-15 5-32 5-43-5-9-7-8-20-14-30-5-9-19-14-17-25 3-12 15-21 25-29z" opacity="0.8"/>
+        <circle cx="56" cy="52" r="6" opacity="0.7"/>
+        <circle cx="40" cy="74" r="2.8" opacity="0.6"/>
+        <circle cx="160" cy="160" r="4.2" opacity="0.6"/>
+        <circle cx="74" cy="34" r="3.2" opacity="0.65"/>
+        <path d="M60 60 C 70 74, 72 90, 66 104" stroke="#74202c" stroke-width="2" fill="none" opacity="0.5" stroke-linecap="round"/>
+      </g>
+    </svg>
+    <div class="sec-head">
+      <span class="sec-no">No. iii</span>
+      <span class="sec-label">Open Source &amp; Bounties</span>
+      <svg class="sec-flourish" viewBox="0 0 300 16" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" filter="url(#inkbleed)">
+        <path d="M2 9 C 50 5 110 12 170 7 C 230 3 268 11 298 7 L 298 8.6 C 268 13 230 6 170 10.6 C 110 14.6 50 8.4 2 11 Z" fill="#74202c" opacity="0.8"/>
+      </svg>
+    </div>
+    <h2>Public work, <span class="script">public record.</span></h2>
+    <p class="sec-intro">The best reference check is code you can read. Over four hundred merged pull requests sit in public repositories under this name — the same rigor clients get, visible to anyone.</p>
+    <ul class="ledger">
+      <li>
+        <span class="qmark">a.</span>
+        <div>
+          <h4>NodeGUI — React + Qt bindings</h4>
+          <p>Merged contributions to <em>NodeGUI</em>, the library for building native desktop apps in JavaScript, and its React renderer over Qt.</p>
+        </div>
+      </li>
+      <li>
+        <span class="qmark">b.</span>
+        <div>
+          <h4>error-stack — Rust error handling</h4>
+          <p>Merged fixes in HASH's <em>error-stack</em>, a context-aware error-handling library for Rust.</p>
+        </div>
+      </li>
+      <li>
+        <span class="qmark">c.</span>
+        <div>
+          <h4>Cosmos SDK &amp; bounty research</h4>
+          <p>Merged fixes in <em>cosmos/cosmos-sdk</em> and public Cosmos SDK chain development in Go and Rust, alongside vulnerabilities responsibly disclosed through established bug-bounty programs.</p>
+        </div>
+      </li>
+    </ul>
+    <p class="os-footnote"><span class="pen">verify it yourself —</span> the whole trail — free-time projects and all — lives at <a href="https://github.com/gluax">github.com/gluax</a>.</p>
+  </div>
+</section>
+
+<div class="stroke-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 44" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" filter="url(#inkbleed-heavy)">
+    <path d="M24 22 C 260 28 480 14 760 24 C 1040 33 1260 17 1416 24 L 1415 26.2 C 1260 21.6 1040 37 760 27.6 C 480 18 260 32 24 24.6 Z" fill="#1f1810" opacity="0.8"/>
+    <circle cx="44" cy="15" r="2.6" fill="#1f1810" opacity="0.55"/>
+  </svg>
+</div>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">No. iv</span>
+      <span class="sec-label">Contact</span>
+      <svg class="sec-flourish" viewBox="0 0 300 16" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" filter="url(#inkbleed)">
+        <path d="M2 8 C 58 12 118 5 182 10 C 240 13.6 272 7 298 9 L 298 10.6 C 272 10 240 16 182 13 C 118 8.6 58 15 2 10 Z" fill="#74202c" opacity="0.8"/>
+      </svg>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <h2>Have a project that needs <span class="script">to ship?</span></h2>
+        <div class="contact-lines">
+          <span class="label">Email</span>
+          <a class="big" href="mailto:contact@gluax.ink">contact@gluax.ink</a>
+          <svg class="u" viewBox="0 0 320 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" filter="url(#inkbleed)">
+            <path d="M2 8 C 65 4 150 11 225 7 C 275 4.6 300 9 318 6.4 L 318 8.6 C 300 12 275 7.6 225 10 C 150 14 65 9 2 11 Z" fill="#74202c" opacity="0.85"/>
+          </svg>
+          <span class="label">GitHub</span>
+          <a class="big" href="https://github.com/gluax">github.com/gluax</a>
+          <svg class="u" viewBox="0 0 320 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" filter="url(#inkbleed)">
+            <path d="M2 6.6 C 75 10.6 160 4 235 8.6 C 282 11.4 302 7 318 9 L 318 11 C 302 10 282 14.4 235 11.6 C 160 7 75 13.6 2 9 Z" fill="#74202c" opacity="0.85"/>
+          </svg>
+        </div>
+      </div>
+      <div class="seal-col">
+        <svg viewBox="0 0 200 200" width="190" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- wax blob -->
+          <path filter="url(#inkbleed)" d="M100 14c12-3 22 6 34 6 12 1 24-6 34 1 10 6 8 20 14 30 6 11 19 18 18 30-1 12-15 17-20 28-5 10-2 24-11 31-9 8-22 2-34 5-11 3-21 13-33 12-12-1-19-13-30-18-10-5-24-3-31-12-7-9 0-22-3-33-3-12-14-21-11-33 3-11 17-13 25-22 8-8 11-21 22-25 9-3 17 3 26 0z" fill="#74202c"/>
+          <path d="M100 26c10-2 19 5 29 5 10 1 21-5 29 1 8 5 6 17 12 25 5 9 16 15 15 25-1 10-13 15-17 24-4 9-2 20-10 27-7 6-19 1-29 4-9 3-17 11-28 10-10-1-16-11-25-15-9-4-21-3-27-10-6-8 0-19-2-28-3-10-12-18-10-28 3-9 15-11 22-18 6-7 9-18 18-21 8-3 15 2 23-1z" fill="none" stroke="#f2ddb4" stroke-width="1.5" opacity="0.5"/>
+          <circle cx="100" cy="100" r="54" fill="none" stroke="#f2ddb4" stroke-width="1.3" stroke-dasharray="1 4" stroke-linecap="round" opacity="0.6"/>
+          <!-- owl -->
+          <g transform="translate(100,97) scale(0.84) translate(-100,-100)" stroke="#f2ddb4" fill="none" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+            <!-- ear tufts -->
+            <path d="M76 70 L66 50 L92 61"/>
+            <path d="M124 70 L134 50 L108 61"/>
+            <!-- head -->
+            <path d="M72 88 C 72 71 84 60 100 60 C 116 60 128 71 128 88 C 128 100 120 108 100 108 C 80 108 72 100 72 88 Z"/>
+            <!-- eyes -->
+            <circle cx="86" cy="85" r="11.5"/>
+            <circle cx="114" cy="85" r="11.5"/>
+            <!-- body -->
+            <path d="M78 104 C 70 118 70 134 80 144 C 89 152 111 152 120 144 C 130 134 130 118 122 104" stroke-width="3.4"/>
+            <!-- chest feathers -->
+            <path d="M88 122 q 6 5.5 12 0 q 6 5.5 12 0" stroke-width="2.4" opacity="0.9"/>
+            <path d="M92 133 q 8 6 16 0" stroke-width="2.4" opacity="0.9"/>
+          </g>
+          <g transform="translate(100,97) scale(0.84) translate(-100,-100)" fill="#f2ddb4" stroke="none">
+            <circle cx="86" cy="85" r="4.6"/>
+            <circle cx="114" cy="85" r="4.6"/>
+            <path d="M100 92 L93.5 102 L100 112 L106.5 102 Z"/>
+          </g>
+        </svg>
+        <span class="caption">sealed &amp; delivered</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <svg class="foot-rule" viewBox="0 0 1000 14" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" filter="url(#inkbleed)">
+      <path d="M0 8 C 120 5 260 10 420 7.4 C 600 4.6 780 10 1000 7 L 1000 8.6 C 780 12 600 7 420 9.8 C 260 12.4 120 8.6 0 10 Z" fill="#1f1810" opacity="0.75"/>
+    </svg>
+    <div class="foot-inner">
+      <div>&copy; 2026 Gluax Inc. All rights reserved.</div>
+      <div>Gluax Inc is a registered U.S. corporation.</div>
+    </div>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
