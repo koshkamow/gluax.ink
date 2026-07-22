@@ -32,7 +32,7 @@ body {
 a { color: var(--ox); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.script { font-family: "Great Vibes", cursive; font-weight: 400; }
+.script { font-family: "Petit Formal Script", cursive; font-weight: 400; }
 .pen { font-family: "Caveat", cursive; font-weight: 500; }
 .caps { font-family: "Lora", serif; font-weight: 600; text-transform: uppercase; }
 .bleed { filter: url(#inkbleed); }
@@ -74,7 +74,7 @@ h1 .script { color: var(--ox); font-size: 104px; line-height: 0.9; display: inli
 /* ---- sections ---- */
 section { padding: 88px 0 84px; position: relative; }
 .sec-head { display: flex; align-items: baseline; gap: 20px; margin-bottom: 6px; }
-.sec-no { font-family: "Great Vibes", cursive; font-size: 42px; color: var(--ox); line-height: 1; filter: url(#inkbleed); }
+.sec-no { font-family: "Petit Formal Script", cursive; font-size: 42px; color: var(--ox); line-height: 1; filter: url(#inkbleed); }
 .sec-label { font-family: "Lora", serif; font-weight: 600; text-transform: uppercase; font-size: 15px; letter-spacing: 0.28em; color: var(--ink-soft); }
 .sec-flourish { flex: 1; height: 16px; min-width: 60px; }
 h2 { font-weight: 500; font-size: 42px; line-height: 1.16; margin: 16px 0 8px; max-width: 26ch; }
@@ -84,7 +84,7 @@ h2 .script { color: var(--ox); font-size: 64px; line-height: 1; padding: 0 6px; 
 .svc-list { margin-top: 52px; }
 .svc { display: grid; grid-template-columns: 150px 1fr; gap: 34px; padding: 34px 0; border-bottom: 1px solid var(--rule); align-items: start; }
 .svc:first-child { border-top: 1px solid var(--rule); }
-.svc .ordinal { font-family: "Great Vibes", cursive; font-size: 44px; color: var(--ox); line-height: 1; padding-top: 4px; transform: rotate(-2deg); filter: url(#inkbleed); }
+.svc .ordinal { font-family: "Petit Formal Script", cursive; font-size: 44px; color: var(--ox); line-height: 1; padding-top: 4px; transform: rotate(-2deg); filter: url(#inkbleed); }
 .svc h3 { font-weight: 600; font-size: 25px; margin-bottom: 8px; }
 .svc p { color: var(--ink-soft); font-size: 18.5px; max-width: 62ch; }
 .engage { margin-top: 58px; padding: 8px 4px 4px 40px; position: relative; }
@@ -112,7 +112,7 @@ h2 .script { color: var(--ox); font-size: 64px; line-height: 1; padding: 0 6px; 
 .ledger { margin-top: 46px; }
 .ledger li { list-style: none; display: grid; grid-template-columns: 60px 1fr; gap: 20px; padding: 26px 0; border-bottom: 1px solid var(--rule); align-items: start; }
 .ledger li:first-child { border-top: 1px solid var(--rule); }
-.ledger .qmark { font-family: "Great Vibes", cursive; font-size: 38px; color: var(--ox); line-height: 1; transform: rotate(-4deg); filter: url(#inkbleed); }
+.ledger .qmark { font-family: "Petit Formal Script", cursive; font-size: 38px; color: var(--ox); line-height: 1; transform: rotate(-4deg); filter: url(#inkbleed); }
 .ledger h4 { font-weight: 600; font-size: 22px; margin-bottom: 4px; }
 .ledger p { color: var(--ink-soft); font-size: 18px; max-width: 68ch; }
 .ledger p em { color: var(--ink); }
